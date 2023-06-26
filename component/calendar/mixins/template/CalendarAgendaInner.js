@@ -70,7 +70,7 @@ export default {
     },
     handleNavMove: function (params) {
       this.moveTimePeriod(params)
-      this.$emit(
+      this.$emitValue(
         this.eventRef + ':navMovePeriod',
         params
       )
@@ -101,15 +101,15 @@ export default {
     this.localNumDays = this.numDays
     this.doUpdate()
     this.handlePassedInEvents()
-    this.$root.$on(
+    this.$on(
       this.eventRef + ':navMovePeriod',
       this.handleNavMove
     )
-    this.$root.$on(
+    this.$on(
       'click-event-' + this.eventRef,
       this.handleEventDetailEvent
     )
-    this.$root.$on(
+    this.$on(
       'update-event-' + this.eventRef,
       this.handleEventUpdate
     )

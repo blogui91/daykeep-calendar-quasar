@@ -1,5 +1,5 @@
 # Daykeep Calendar
-An event display calendar for the Quasar framework. 
+An event display calendar for the Quasar framework.
 
 ![screenshot](https://stormseed.github.io/daykeep-calendar-quasar/statics/quasar_calendar_snap.png)
 
@@ -138,7 +138,7 @@ So to implement, be sure to have `prevent-event-detail` and `event-ref` set when
 And then somewhere be sure to be listening for a click event on that calendar:
 
 ```js
-this.$root.$on(
+this.$on(
   'click-event-MYCALENDAR',
   function (eventDetailObject) {
     // do something here
@@ -165,7 +165,7 @@ The `DaykeepCalendarMonth` component triggers a "click-day-{eventRef}" event whe
 
 So for a `<daykeep-calendar-month>` component with a "MYCALENDAR" `event-ref`:
 ```js
-this.$root.$on(
+this.$on(
   'click-day-MYCALENDAR',
   function (day) {
     // do something here

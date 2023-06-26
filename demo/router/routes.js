@@ -2,9 +2,9 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/LayoutDefault.vue'),
+    component: () => import('../layouts/LayoutDefault.vue'),
     children: [
-      { path: '', component: () => import('pages/index.vue') }
+      { path: '', component: () => import('../pages/index.vue') }
     ]
   }
 ]
@@ -12,8 +12,8 @@ const routes = [
 // Always leave this as last one
 if (process.env.MODE !== 'ssr') {
   routes.push({
-    path: '*',
-    component: () => import('pages/Error404.vue')
+    path: '/not-found',
+    component: () => import('../pages/Error404.vue')
   })
 }
 

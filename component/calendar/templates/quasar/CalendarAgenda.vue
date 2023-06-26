@@ -18,6 +18,7 @@
       :day-display-start-hour="dayDisplayStartHour"
       :full-component-ref="fullComponentRef"
     >
+      <!-- eslint-disable-next-line -->
       <template v-slot:headernav="navVal">
         <!-- calendar header -->
         <calendar-header-nav
@@ -56,8 +57,8 @@
     CalendarAgendaTemplateMixin,
     CalendarAgendaInner
   } from '@daykeep/calendar-core'
-  import CalendarHeaderNav from './CalendarHeaderNav'
-  import CalendarEventDetail from './CalendarEventDetail'
+  import CalendarHeaderNav from './CalendarHeaderNav.vue'
+  import CalendarEventDetail from './CalendarEventDetail.vue'
 
   export default {
     name: 'CalendarAgenda',

@@ -198,7 +198,7 @@ export default {
     this.mountSetDate()
     this.startTimePositionInterval()
   },
-  beforeDestroy () {
+  onBeforeUnmount () {
     this.endTimePositionInterval()
   }
 }

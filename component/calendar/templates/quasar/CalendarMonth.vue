@@ -47,8 +47,8 @@
     CalendarMonthTemplateMixin,
     CalendarMonthInner
   } from '@daykeep/calendar-core'
-  import CalendarHeaderNav from './CalendarHeaderNav'
-  import CalendarEventDetail from './CalendarEventDetail'
+  import CalendarHeaderNav from './CalendarHeaderNav.vue'
+  import CalendarEventDetail from './CalendarEventDetail.vue'
 
   export default {
     name: 'CalendarMonth',

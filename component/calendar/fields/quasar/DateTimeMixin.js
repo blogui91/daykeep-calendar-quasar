@@ -34,7 +34,7 @@ export default {
       }
       this.fakieStringValue = newDt.toLocaleString(this.fakieStringFormats[fieldType])
       this.dtValue = newDt
-      this.$emit('input', newDt.toJSDate())
+      this.$emitValue('input', newDt.toJSDate())
     },
     handleDateFieldInput: function (value, reason, details) {
       this.convertDtToEverythingElse(

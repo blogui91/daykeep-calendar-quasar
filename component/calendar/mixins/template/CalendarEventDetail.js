@@ -188,7 +188,7 @@ export default {
 
       // done modifying
       this.eventObject = this.editEventObject
-      this.$root.$emit(
+      this.$emitValue(
         'update-event-' + this.eventRef,
         this.eventObject
       )

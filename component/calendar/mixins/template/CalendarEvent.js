@@ -93,7 +93,7 @@ export default {
     },
     handleClick: function (e) {
       this.eventObject.allowEditing = this.allowEditing
-      this.$emit('click', this.eventObject)
+      this.$emitValue('click', this.eventObject)
       this.triggerEventClick(this.eventObject, this.eventRef)
     }
   },

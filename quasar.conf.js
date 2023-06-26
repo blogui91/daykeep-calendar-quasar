@@ -1,10 +1,13 @@
 // Configuration for your app
 const path = require('path')
 const CopyPlugin = require('copy-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
 
 module.exports = function (ctx) {
   return {
-    boot: [],
+    boot: [
+      'mitt',
+    ],
     plugins: [],
     sourceFiles: {
       rootComponent: 'demo/App.vue',
@@ -17,7 +20,7 @@ module.exports = function (ctx) {
       // 'component/calendar/styles-common/app.styl',
       // 'component/calendar/styles-common/calendar.vars.styl'
     ],
-    animations: 'all',
+    animations: [],
     extras: [
       'roboto-font',
       'material-icons' // optional, you are not bound to it
@@ -33,13 +36,12 @@ module.exports = function (ctx) {
       publicPath: '/daykeep-calendar-quasar',
       distDir: 'docs',
       scopeHoisting: true,
+      chainWebpack (chain) {
+        chain
+          .plugin('eslint-webpack-plugin')
+          .use(ESLintPlugin, [{ extensions: ['js', 'vue'] }])
+      },
       extendWebpack (cfg) {
-        cfg.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules|quasar)/
-        })
         cfg.resolve.alias = {
           ...cfg.resolve.alias,
           src: path.resolve(__dirname, './demo'),

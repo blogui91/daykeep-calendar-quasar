@@ -35,22 +35,22 @@ export default {
   },
   methods: {
     setupEventsHandling: function () {
-      this.$root.$on(
+      this.$on(
         this.eventRef + ':navMovePeriod',
         this.calPackageMoveTimePeriod
       )
-      this.$root.$on(
+      this.$on(
         this.eventRef + ':moveToSingleDay',
         this.switchToSingleDay
       )
-      this.$root.$on(
+      this.$on(
         'update-event-' + this.eventRef,
         this.handleEventUpdate
       )
     },
     calPackageMoveTimePeriod: function (params) {
       this.moveTimePeriod(params)
-      this.$emit(
+      this.$emitValue(
         'calendar' + ':navMovePeriod',
         params
       )

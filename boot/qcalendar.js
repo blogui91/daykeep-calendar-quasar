@@ -5,9 +5,9 @@ import {
   QCalendarAgenda
 } from '@quasar/quasar-app-extension-qcalendar/component'
 
-export default async ({ Vue }) => {
-  Vue.component('q-calendar', QCalendar)
-  Vue.component('q-calendar-month', QCalendarMonth)
-  Vue.component('q-calendar-multi-day', QCalendarMultiDay)
-  Vue.component('q-calendar-agenda', QCalendarAgenda)
+export default async ({ app }) => {
+  app.component('q-calendar', QCalendar)
+  app.component('q-calendar-month', QCalendarMonth)
+  app.component('q-calendar-multi-day', QCalendarMultiDay)
+  app.component('q-calendar-agenda', QCalendarAgenda)
 }

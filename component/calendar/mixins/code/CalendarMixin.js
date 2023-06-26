@@ -26,13 +26,13 @@ export default {
       return dateObject
     },
     triggerEventClick: function (eventObject, eventRef) {
-      this.$root.$emit(
+      this.$emitValue(
         'click-event-' + eventRef,
         eventObject
       )
     },
     triggerDayClick: function (dateObject, eventRef) {
-      this.$root.$emit(
+      this.$emitValue(
         'click-day-' + eventRef, {
           day: dateObject.toObject()
         }
@@ -47,7 +47,7 @@ export default {
       else {
         payload['visible'] = true
       }
-      this.$root.$emit(
+      this.$emitValue(
         'display-change-' + eventRef,
         payload
       )
@@ -71,7 +71,7 @@ export default {
     },
     fullMoveToDay: function (dateObject) {
       if (this.fullComponentRef) {
-        this.$root.$emit(
+        this.$emitValue(
           this.fullComponentRef + ':moveToSingleDay', {
             dateObject: dateObject
           }

@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     doMoveTimePeriod (timePeriodUnit, timePeriodAmount) {
-      this.$root.$emit(
+      this.$emitValue(
         this.moveTimePeriodEmit,
         {
           unitType: timePeriodUnit,
