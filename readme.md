@@ -16,13 +16,13 @@ You can see a demo of the calendar components with event data at:
 Version 1.0.x of Daykeep Calendar is intended to be used with [Quasar Framework v1](https://v1.quasar-framework.org/). For legacy versions of Quasar, you should use v0.3.x of Quasar Calendar.
 
 ```shell
-yarn add @daykeep/calendar-quasar
+yarn add @blogui91/calendar-quasar
 ```
 
 Add Daykeep Calendar to your .vue page similar to a Quasar component
 
 ```js
-import { DaykeepCalendar } from '@daykeep/calendar-quasar'
+import { DaykeepCalendar } from '@blogui91/calendar-quasar'
 ```
 
 or import individual components
@@ -32,7 +32,7 @@ import {
   DaykeepCalendarMonth,
   DaykeepCalendarAgenda,
   DaykeepCalendarMultiDay
-} from '@daykeep/calendar-quasar'
+} from '@blogui91/calendar-quasar'
 ```
 
 In your template, you can just put in a calendar viewer using the current date as the start date

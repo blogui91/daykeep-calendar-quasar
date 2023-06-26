@@ -148,7 +148,7 @@
   import {
     MoveDates,
     sampleEventArray
-  } from '@daykeep/calendar-core/demo'
+  } from '@blogui91/calendar-core/demo'
   export default {
     name: 'PageIndex',
     components: {

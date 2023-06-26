@@ -25,7 +25,7 @@
 </template>
 
 <script>
-  import { CalendarHeaderNavTemplateMixin } from '@daykeep/calendar-core'
+  import { CalendarHeaderNavTemplateMixin } from '@blogui91/calendar-core'
   import { QBtn } from 'quasar'
 
   export default {

@@ -46,7 +46,7 @@
     CalendarParentComponentMixin,
     CalendarMonthTemplateMixin,
     CalendarMonthInner
-  } from '@daykeep/calendar-core'
+  } from '@blogui91/calendar-core'
   import CalendarHeaderNav from './CalendarHeaderNav.vue'
   import CalendarEventDetail from './CalendarEventDetail.vue'
 

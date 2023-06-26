@@ -6,7 +6,7 @@ import {
   CalendarDayLabels,
   CalendarEvent,
   CalendarTimeLabelColumn
-} from '@daykeep/calendar-core'
+} from '@blogui91/calendar-core'
 
 // framework specific templates
 import Calendar from './Calendar.vue'

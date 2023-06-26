@@ -96,7 +96,7 @@
     CalendarDayLabels,
     CalendarAllDayEvents,
     CalendarMultiDayContent
-  } from '@daykeep/calendar-core'
+  } from '@blogui91/calendar-core'
   import CalendarHeaderNav from './CalendarHeaderNav.vue'
   import CalendarEventDetail from './CalendarEventDetail.vue'
   import { QScrollArea } from 'quasar'
@@ -121,7 +121,7 @@
 </script>
 
 <style lang="stylus">
-  @import '~@daykeep/calendar-core/component/calendar/styles-common/calendar.vars.styl'
+  @import '~@blogui91/calendar-core/component/calendar/styles-common/calendar.vars.styl'
 
   .calendar-multi-day-component
     .calendar-time-margin

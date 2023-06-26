@@ -339,7 +339,7 @@
     CalendarMixin,
     EventPropsMixin,
     CalendarEventDetailTemplateMixin
-  } from '@daykeep/calendar-core'
+  } from '@blogui91/calendar-core'
   import {
     QuasarFieldDate as FieldDate,
     QuasarFieldTime as FieldTime
@@ -379,7 +379,7 @@
 </script>
 
 <style lang="stylus">
-  @import '~@daykeep/calendar-core/component/calendar/styles-common/calendar.vars.styl'
+  @import '~@blogui91/calendar-core/component/calendar/styles-common/calendar.vars.styl'
 
   $topSidePadding = 16px
   $listSideItemWidth = 38px
